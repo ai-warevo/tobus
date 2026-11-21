@@ -1,5 +1,13 @@
 # 🚌 aw::tobus
 
+[![C++23](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](https://cppreference.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Coverage](https://raw.githubusercontent.com/ai-warevo/tobus/refs/heads/badges/coverage.svg)](https://ai-warevo.github.io/tobus)
+<br />
+[![PR Build](https://github.com/ai-warevo/tobus/actions/workflows/pr-build.yml/badge.svg)](https://github.com/ai-warevo/tobus/actions/workflows/pr-build.yml)
+[![Weekly Deep](https://github.com/ai-warevo/tobus/actions/workflows/weekly-deep.yml/badge.svg)](https://github.com/ai-warevo/tobus/actions/workflows/weekly-deep.yml)
+[![Release](https://github.com/ai-warevo/tobus/actions/workflows/release.yml/badge.svg)](https://github.com/ai-warevo/tobus/actions/workflows/release.yml)
+
 > `auto bus = aw::tobus::EventBusFactory::create();` — A fast event shuttle: inside the process it runs direct without transfers or serialization, and when needed it easily takes intercity network routes.
 
 A transport-agnostic event bus for **C++23** (`aw::tobus`). Modules depend only on the `IEventBus` interface; the transport choice under the hood (in-process "shuttle" today; sockets and brokers tomorrow) is determined solely by configuration.
