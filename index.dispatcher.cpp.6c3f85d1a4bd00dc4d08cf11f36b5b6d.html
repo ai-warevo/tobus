@@ -98,7 +98,7 @@
   </div>
   <div class="Box-row Box-row--focus-gray py-2 d-flex">
     <div role="gridcell" class="color-fg-muted flex-auto min-width-0 col-md-2"><a href="#L91">aw::tobus::detail::Dispatcher::dispatch(aw::tobus::EventTypeInfo const&amp;, std::shared_ptr&lt;void const&gt; const&amp;) (src/detail/dispatcher.cpp:91)</a>    </div>
-    <div role="gridcell" class="color-fg-muted flex-auto min-width-0 d-flex flex-justify-end flex-wrap flex-items-baseline" data-sort="4152">called 4152 times</div>
+    <div role="gridcell" class="color-fg-muted flex-auto min-width-0 d-flex flex-justify-end flex-wrap flex-items-baseline" data-sort="4107">called 4107 times</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">80.0%</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">94.7%</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">71.0%</div>
@@ -119,7 +119,7 @@
   </div>
   <div class="Box-row Box-row--focus-gray py-2 d-flex">
     <div role="gridcell" class="color-fg-muted flex-auto min-width-0 col-md-2"><a href="#L122">aw::tobus::detail::Dispatcher::run(std::shared_ptr&lt;aw::tobus::detail::Dispatcher&gt;, std::shared_ptr&lt;std::function&lt;aw::tpl::threading::tasks::Task&lt;void&gt; (void const*)&gt; &gt;, std::shared_ptr&lt;void const&gt;, std::basic_string_view&lt;char, std::char_traits&lt;char&gt; &gt;) (src/detail/dispatcher.cpp:122)</a>    </div>
-    <div role="gridcell" class="color-fg-muted flex-auto min-width-0 d-flex flex-justify-end flex-wrap flex-items-baseline" data-sort="8101">called 8101 times</div>
+    <div role="gridcell" class="color-fg-muted flex-auto min-width-0 d-flex flex-justify-end flex-wrap flex-items-baseline" data-sort="8084">called 8084 times</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">100.0%</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">31.8%</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">42.1%</div>
@@ -1010,14 +1010,14 @@
         <td class="text-right src linenos"><a class="normal" id="L91" href="#L91">91</a></td>
         <td class="text-right src linenos ws-unset">
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4152</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4107</td>
         <td class="src coveredLine show_coveredLine"><span class="kt">void</span><span class="w"> </span><span class="n">Dispatcher</span><span class="o">::</span><span class="n">dispatch</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EventTypeInfo</span><span class="o">&amp;</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
       </tr>
       <tr>
         <td class="text-right src linenos"><a class="normal" id="L92" href="#L92">92</a></td>
         <td class="text-right src linenos ws-unset">
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4152</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4107</td>
         <td class="src coveredLine show_coveredLine"><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">Table</span><span class="o">&gt;</span><span class="w"> </span><span class="n">snapshot</span><span class="p">;</span></td>
       </tr>
       <tr>
@@ -1033,11 +1033,11 @@
           <details class="normal details-overlay">
             <summary>1/1</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  2 &rightarrow; 3 taken 4152 times.</div>
+              <div class="color-taken-branch">&check; Branch  2 &rightarrow; 3 taken 4107 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4152</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4107</td>
         <td class="src coveredLine show_coveredLine"><span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">lock_guard</span><span class="w"> </span><span class="nf">lock</span><span class="p">(</span><span class="n">mtx_</span><span class="p">);</span></td>
       </tr>
       <tr>
@@ -1060,11 +1060,11 @@
           <details class="normal details-overlay">
             <summary>1/1</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  3 &rightarrow; 4 taken 4152 times.</div>
+              <div class="color-taken-branch">&check; Branch  3 &rightarrow; 4 taken 4107 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4152</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4107</td>
         <td class="src coveredLine show_coveredLine"><span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">known</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">identities_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">type</span><span class="p">.</span><span class="n">id</span><span class="p">);</span></td>
       </tr>
       <tr>
@@ -1073,16 +1073,16 @@
           <details class="normal details-overlay">
             <summary>6/6</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  6 &rightarrow; 7 taken 4150 times.</div>
+              <div class="color-taken-branch">&check; Branch  6 &rightarrow; 7 taken 4105 times.</div>
               <div class="color-taken-branch">&check; Branch  6 &rightarrow; 11 taken 2 times.</div>
               <div class="color-taken-branch">&check; Branch  9 &rightarrow; 10 taken 2 times.</div>
-              <div class="color-taken-branch">&check; Branch  9 &rightarrow; 11 taken 4148 times.</div>
+              <div class="color-taken-branch">&check; Branch  9 &rightarrow; 11 taken 4103 times.</div>
               <div class="color-taken-branch">&check; Branch  12 &rightarrow; 13 taken 2 times.</div>
-              <div class="color-taken-branch">&check; Branch  12 &rightarrow; 18 taken 4150 times.</div>
+              <div class="color-taken-branch">&check; Branch  12 &rightarrow; 18 taken 4105 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4152</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4107</td>
         <td class="src coveredLine show_coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">known</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">identities_</span><span class="p">.</span><span class="n">end</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">*</span><span class="n">known</span><span class="o">-&gt;</span><span class="n">second</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">*</span><span class="n">type</span><span class="p">.</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
       </tr>
       <tr>
@@ -1110,14 +1110,14 @@
         <td class="text-right src linenos"><a class="normal" id="L101" href="#L101">101</a></td>
         <td class="text-right src linenos ws-unset">
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4150</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4105</td>
         <td class="src coveredLine show_coveredLine"><span class="w">        </span><span class="n">snapshot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table_</span><span class="p">;</span></td>
       </tr>
       <tr>
         <td class="text-right src linenos"><a class="normal" id="L102" href="#L102">102</a></td>
         <td class="text-right src linenos ws-unset">
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4152</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4107</td>
         <td class="src coveredLine show_coveredLine"><span class="w">    </span><span class="p">}</span></td>
       </tr>
       <tr>
@@ -1126,11 +1126,11 @@
           <details class="normal details-overlay">
             <summary>1/1</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  21 &rightarrow; 22 taken 4150 times.</div>
+              <div class="color-taken-branch">&check; Branch  21 &rightarrow; 22 taken 4105 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4150</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4105</td>
         <td class="src coveredLine show_coveredLine"><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">snapshot</span><span class="o">-&gt;</span><span class="n">find</span><span class="p">(</span><span class="n">type</span><span class="p">.</span><span class="n">id</span><span class="p">);</span></td>
       </tr>
       <tr>
@@ -1139,19 +1139,19 @@
           <details class="normal details-overlay">
             <summary>2/2</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  25 &rightarrow; 26 taken 57 times.</div>
-              <div class="color-taken-branch">&check; Branch  25 &rightarrow; 27 taken 4093 times.</div>
+              <div class="color-taken-branch">&check; Branch  25 &rightarrow; 26 taken 29 times.</div>
+              <div class="color-taken-branch">&check; Branch  25 &rightarrow; 27 taken 4076 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4150</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4105</td>
         <td class="src coveredLine show_coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">snapshot</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span></td>
       </tr>
       <tr>
         <td class="text-right src linenos"><a class="normal" id="L105" href="#L105">105</a></td>
         <td class="text-right src linenos ws-unset">
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">57</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">29</td>
         <td class="src coveredLine show_coveredLine"><span class="w">        </span><span class="k">return</span><span class="p">;</span></td>
       </tr>
       <tr>
@@ -1167,11 +1167,11 @@
           <details class="normal details-overlay">
             <summary>1/1</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  27 &rightarrow; 28 taken 4093 times.</div>
+              <div class="color-taken-branch">&check; Branch  27 &rightarrow; 28 taken 4076 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4093</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4076</td>
         <td class="src coveredLine show_coveredLine"><span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shared_from_this</span><span class="p">();</span></td>
       </tr>
       <tr>
@@ -1180,12 +1180,12 @@
           <details class="normal details-overlay">
             <summary>2/2</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  53 &rightarrow; 31 taken 8101 times.</div>
-              <div class="color-taken-branch">&check; Branch  53 &rightarrow; 54 taken 4093 times.</div>
+              <div class="color-taken-branch">&check; Branch  53 &rightarrow; 31 taken 8084 times.</div>
+              <div class="color-taken-branch">&check; Branch  53 &rightarrow; 54 taken 4076 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">16287</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">16236</td>
         <td class="src coveredLine show_coveredLine"><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Entry</span><span class="o">&amp;</span><span class="w"> </span><span class="n">entry</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
       </tr>
       <tr>
@@ -1201,11 +1201,11 @@
           <details class="normal details-overlay">
             <summary>1/1</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  33 &rightarrow; 34 taken 8101 times.</div>
+              <div class="color-taken-branch">&check; Branch  33 &rightarrow; 34 taken 8084 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">8101</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">8084</td>
         <td class="src coveredLine show_coveredLine"><span class="w">        </span><span class="n">inflight_</span><span class="p">.</span><span class="n">add</span><span class="p">();</span></td>
       </tr>
       <tr>
@@ -1221,11 +1221,11 @@
           <details class="normal details-overlay">
             <summary>1/1</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  37 &rightarrow; 38 taken 8101 times.</div>
+              <div class="color-taken-branch">&check; Branch  37 &rightarrow; 38 taken 8084 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">8101</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">8084</td>
         <td class="src coveredLine show_coveredLine"><span class="w">            </span><span class="n">aw</span><span class="o">::</span><span class="n">tpl</span><span class="o">::</span><span class="n">threading</span><span class="o">::</span><span class="n">tasks</span><span class="o">::</span><span class="n">co_spawn</span><span class="p">(</span><span class="n">run</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">entry</span><span class="p">.</span><span class="n">handler</span><span class="p">,</span><span class="w"> </span><span class="n">event</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="p">.</span><span class="n">name</span><span class="p">));</span></td>
       </tr>
       <tr>
@@ -1273,7 +1273,7 @@
         <td class="text-right src linenos"><a class="normal" id="L118" href="#L118">118</a></td>
         <td class="text-right src linenos ws-unset">
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4152</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">4107</td>
         <td class="src coveredLine show_coveredLine"><span class="p">}</span></td>
       </tr>
       <tr>
@@ -1303,18 +1303,18 @@
           <details class="normal details-overlay">
             <summary>7/22</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  6 &rightarrow; 7 taken 8101 times.</div>
-              <div class="color-taken-branch">&check; Branch  8 &rightarrow; 9 taken 8101 times.</div>
+              <div class="color-taken-branch">&check; Branch  6 &rightarrow; 7 taken 8084 times.</div>
+              <div class="color-taken-branch">&check; Branch  8 &rightarrow; 9 taken 8084 times.</div>
               <div class="color-fg-danger">&cross; Branch  10 &rightarrow; 11 not taken.</div>
-              <div class="color-taken-branch">&check; Branch  10 &rightarrow; 12 taken 8101 times.</div>
+              <div class="color-taken-branch">&check; Branch  10 &rightarrow; 12 taken 8084 times.</div>
               <div class="color-fg-danger">&cross; Branch  12 &rightarrow; 13 not taken.</div>
-              <div class="color-taken-branch">&check; Branch  12 &rightarrow; 14 taken 8101 times.</div>
+              <div class="color-taken-branch">&check; Branch  12 &rightarrow; 14 taken 8084 times.</div>
               <div class="color-fg-danger">&cross; Branch  14 &rightarrow; 15 not taken.</div>
-              <div class="color-taken-branch">&check; Branch  14 &rightarrow; 16 taken 8101 times.</div>
+              <div class="color-taken-branch">&check; Branch  14 &rightarrow; 16 taken 8084 times.</div>
               <div class="color-fg-danger">&cross; Branch  16 &rightarrow; 17 not taken.</div>
-              <div class="color-taken-branch">&check; Branch  16 &rightarrow; 18 taken 8101 times.</div>
+              <div class="color-taken-branch">&check; Branch  16 &rightarrow; 18 taken 8084 times.</div>
               <div class="color-fg-danger">&cross; Branch  18 &rightarrow; 19 not taken.</div>
-              <div class="color-taken-branch">&check; Branch  18 &rightarrow; 20 taken 8101 times.</div>
+              <div class="color-taken-branch">&check; Branch  18 &rightarrow; 20 taken 8084 times.</div>
               <div class="color-fg-danger">&cross; Branch  25 &rightarrow; 26 not taken.</div>
               <div class="color-fg-danger">&cross; Branch  25 &rightarrow; 27 not taken.</div>
               <div class="color-fg-danger">&cross; Branch  28 &rightarrow; 29 not taken.</div>
@@ -1328,7 +1328,7 @@
             </div>
           </details>
         </td>
-        <td class="linecount partialCoveredLine show_partialCoveredLine pr-2 pl-2 color-fg-muted text-right">16202</td>
+        <td class="linecount partialCoveredLine show_partialCoveredLine pr-2 pl-2 color-fg-muted text-right">16168</td>
         <td class="src partialCoveredLine show_partialCoveredLine"><span class="n">Task</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Dispatcher</span><span class="o">::</span><span class="n">run</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Dispatcher</span><span class="o">&gt;</span><span class="w"> </span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">RawEventHandler</span><span class="o">&gt;</span><span class="w"> </span><span class="n">handler</span><span class="p">,</span></td>
       </tr>
       <tr>
@@ -1614,7 +1614,7 @@
         <hr class="block-separator"/>
         <footer class="text-center">
           Created using <a href="http://gcovr.com/en/8.7">GCOVR (Version 8.7)</a>
-          at 2026-11-22 15:39:35+00:00
+          at 2026-11-22 15:52:07+00:00
         </footer>
       </div>
     </div>

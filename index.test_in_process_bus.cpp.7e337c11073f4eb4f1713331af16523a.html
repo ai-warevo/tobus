@@ -399,7 +399,7 @@
   </div>
   <div class="Box-row Box-row--focus-gray py-2 d-flex">
     <div role="gridcell" class="color-fg-muted flex-auto min-width-0 col-md-2"><a href="#L364">CATCH2_INTERNAL_TEST_36()::{lambda((anonymous namespace)::Ping const&amp;)#1}::operator()((anonymous namespace)::Ping const&amp;) const (tests/test_in_process_bus.cpp:364)</a>    </div>
-    <div role="gridcell" class="color-fg-muted flex-auto min-width-0 d-flex flex-justify-end flex-wrap flex-items-baseline" data-sort="61">called 61 times</div>
+    <div role="gridcell" class="color-fg-muted flex-auto min-width-0 d-flex flex-justify-end flex-wrap flex-items-baseline" data-sort="44">called 44 times</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">100.0%</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">45.5%</div>
     <div role="gridcell" class="color-fg-muted d-flex flex-justify-end flex-wrap col-2">50.0%</div>
@@ -4134,12 +4134,12 @@
           <details class="normal details-overlay">
             <summary>2/2</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  6 &rightarrow; 3 taken 114 times.</div>
+              <div class="color-taken-branch">&check; Branch  6 &rightarrow; 3 taken 69 times.</div>
               <div class="color-taken-branch">&check; Branch  6 &rightarrow; 7 taken 2 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">116</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">71</td>
         <td class="src coveredLine show_coveredLine"><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">stop</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
       </tr>
       <tr>
@@ -4148,11 +4148,11 @@
           <details class="normal details-overlay">
             <summary>1/1</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  3 &rightarrow; 4 taken 114 times.</div>
+              <div class="color-taken-branch">&check; Branch  3 &rightarrow; 4 taken 69 times.</div>
             </div>
           </details>
         </td>
-        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">114</td>
+        <td class="linecount coveredLine show_coveredLine pr-2 pl-2 color-fg-muted text-right">69</td>
         <td class="src coveredLine show_coveredLine"><span class="w">            </span><span class="n">bus</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">Ping</span><span class="p">{});</span></td>
       </tr>
       <tr>
@@ -4195,12 +4195,12 @@
           <details class="normal details-overlay">
             <summary>4/10</summary>
             <div class="text-left position-absolute color-bg-subtle p-3 mt-2" style="z-index: 1;">
-              <div class="color-taken-branch">&check; Branch  3 &rightarrow; 4 taken 61 times.</div>
-              <div class="color-taken-branch">&check; Branch  5 &rightarrow; 6 taken 61 times.</div>
+              <div class="color-taken-branch">&check; Branch  3 &rightarrow; 4 taken 44 times.</div>
+              <div class="color-taken-branch">&check; Branch  5 &rightarrow; 6 taken 44 times.</div>
               <div class="color-fg-danger">&cross; Branch  7 &rightarrow; 8 not taken.</div>
-              <div class="color-taken-branch">&check; Branch  7 &rightarrow; 9 taken 61 times.</div>
+              <div class="color-taken-branch">&check; Branch  7 &rightarrow; 9 taken 44 times.</div>
               <div class="color-fg-danger">&cross; Branch  9 &rightarrow; 10 not taken.</div>
-              <div class="color-taken-branch">&check; Branch  9 &rightarrow; 11 taken 61 times.</div>
+              <div class="color-taken-branch">&check; Branch  9 &rightarrow; 11 taken 44 times.</div>
               <div class="color-fg-danger">&cross; Branch  16 &rightarrow; 17 not taken.</div>
               <div class="color-fg-danger">&cross; Branch  16 &rightarrow; 18 not taken.</div>
               <div class="color-fg-danger">&cross; Branch  19 &rightarrow; 20 not taken.</div>
@@ -4208,7 +4208,7 @@
             </div>
           </details>
         </td>
-        <td class="linecount partialCoveredLine show_partialCoveredLine pr-2 pl-2 color-fg-muted text-right">922</td>
+        <td class="linecount partialCoveredLine show_partialCoveredLine pr-2 pl-2 color-fg-muted text-right">888</td>
         <td class="src partialCoveredLine show_partialCoveredLine"><span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">sub</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bus</span><span class="p">.</span><span class="n">subscribe</span><span class="o">&lt;</span><span class="n">Ping</span><span class="o">&gt;</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="k">const</span><span class="w"> </span><span class="n">Ping</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Task</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span></td>
       </tr>
       <tr>
@@ -4833,7 +4833,7 @@
         <hr class="block-separator"/>
         <footer class="text-center">
           Created using <a href="http://gcovr.com/en/8.7">GCOVR (Version 8.7)</a>
-          at 2026-11-22 15:39:35+00:00
+          at 2026-11-22 15:52:07+00:00
         </footer>
       </div>
     </div>
