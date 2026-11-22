@@ -3,24 +3,28 @@ if(TOBUS_WARNINGS_AS_ERRORS)
     aw_test_target(NAME tobus
         SOURCES
             test_event_types.cpp
+            test_errors_coverage.cpp
             test_in_process_bus.cpp
             test_subscription.cpp
             test_factory.cpp
             test_stubs.cpp
             test_http_bus.cpp
             test_event_traits.cpp
+            test_framed_bus_coverage.cpp
         LINK_TARGET aw::tobus
         STRICT_WARNINGS)
 else()
     aw_test_target(NAME tobus
         SOURCES
             test_event_types.cpp
+            test_errors_coverage.cpp
             test_in_process_bus.cpp
             test_subscription.cpp
             test_factory.cpp
             test_stubs.cpp
             test_http_bus.cpp
             test_event_traits.cpp
+            test_framed_bus_coverage.cpp
         LINK_TARGET aw::tobus)
 endif()
 
