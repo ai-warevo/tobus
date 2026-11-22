@@ -6,7 +6,7 @@
 <br />
 [![PR Build](https://github.com/ai-warevo/tobus/actions/workflows/pr-build.yml/badge.svg)](https://github.com/ai-warevo/tobus/actions/workflows/pr-build.yml)
 [![Weekly Deep](https://github.com/ai-warevo/tobus/actions/workflows/weekly-deep.yml/badge.svg)](https://github.com/ai-warevo/tobus/actions/workflows/weekly-deep.yml)
-[![Release](https://github.com/ai-warevo/tobus/actions/workflows/release.yml/badge.svg)](https://github.com/ai-warevo/tobus/actions/workflows/release.yml)
+[![Release](https://github.com/ai-warevo/tobus/actions/workflows/release.yml/badge.svg)](https://github.com/ai-warevo/tobus/actions/workflows/release.yml) 
 
 > `auto bus = aw::tobus::EventBusFactory::create();` — A fast event shuttle: inside the process it runs direct without transfers or serialization, and when needed it easily takes intercity network routes.
 
