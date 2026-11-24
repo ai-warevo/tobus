@@ -28,7 +28,7 @@ Thank you for your interest in contributing to **aw::tobus** — a transport-agn
 - **C++20 idiomatic style**: concepts/requires over SFINAE, coroutines, `std::jthread`, RAII everywhere
 - **Naming conventions**: types `PascalCase`, functions/variables `snake_case`, private members `trailing_underscore_`
 - **Formatting**: 4 spaces, 120 cols, attached braces (see `.clang-format`, `.editorconfig`)
-- **Headers**: `#pragma once`, include groups (own header → `<aw/tobus/...>` → `<std>`), blank line between groups
+- **Headers**: include guards (`#ifndef AW_TOBUS_<PATH>_HPP` / `#define` / `#endif  // AW_TOBUS_<PATH>_HPP`), include groups (own header → `<aw/tobus/...>` → `<std>`), blank line between groups
 
 ### Architecture Rules
 

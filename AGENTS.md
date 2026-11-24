@@ -74,7 +74,7 @@ Namespaces map to directories:
 - **Granularity:** one logical concept per header. File names are `snake_case`. `tobus.hpp` is the umbrella header.
 - **Transport stubs:** each transport has a public header in `include/aw/tobus/transports/` and a private source in `src/transports/`. They are compiled only when `DTOBUS_ENABLE_<X>` is ON.
 - **`.hpp`/`.cpp` separation:** non-template code is declared in the header and defined in the mirrored path under `src/`. Templates stay in headers.
-- Headers start with `#pragma once`; a `.cpp` includes its own header first. Include groups: own header, then `<aw/tobus/...>`, then `<std>` headers.
+- **Headers:** use standard include guards (`#ifndef AW_TOBUS_<PATH>_HPP` / `#define` / `#endif  // AW_TOBUS_<PATH>_HPP`). A `.cpp` includes its own header first. Include groups: own header, then `<aw/tobus/...>`, then `<std>` headers.
 
 ## Documentation & comments
 
