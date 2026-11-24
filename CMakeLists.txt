@@ -17,6 +17,8 @@ aw_project_setup(PREFIX TOBUS BUILD_TESTS BUILD_EXAMPLES INSTALL)
 find_package(Threads REQUIRED)
 aw_check_cxx23_runtime()
 
+include(DependencyCache)
+
 option(TOBUS_ENABLE_UNIX_SOCKET "Build the UnixSocketBus stub" OFF)
 option(TOBUS_ENABLE_TCP_SERVER "Build the TCPServerBus stub" OFF)
 option(TOBUS_ENABLE_HTTP "Build the HTTPBus transport" OFF)
@@ -28,23 +30,23 @@ option(TOBUS_ENABLE_KAFKA "Enable the KafkaBus stub (header-only)" OFF)
 option(TOBUS_ENABLE_JSON "Build with nlohmann/json support for JsonEventTraits" OFF)
 
 if(NOT TARGET aw::tpl)
-    FetchContent_Declare(
-        aw_tpl
+    aw_fetch_dependency(
+        NAME aw_tpl
         GIT_REPOSITORY https://github.com/ai-warevo/tpl.git
-        GIT_TAG v3.1.0)
-    set(AW_TPL_BUILD_TESTS OFF CACHE BOOL "" FORCE)
-    set(AW_TPL_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
-    set(AW_TPL_INSTALL ${TOBUS_INSTALL} CACHE BOOL "" FORCE)
-    FetchContent_MakeAvailable(aw_tpl)
+        GIT_TAG v3.1.0
+        OPTIONS
+            AW_TPL_BUILD_TESTS OFF
+            AW_TPL_BUILD_EXAMPLES OFF
+            AW_TPL_INSTALL ${TOBUS_INSTALL})
 endif()
 
 if(TOBUS_ENABLE_JSON AND NOT TARGET nlohmann_json::nlohmann_json)
-    FetchContent_Declare(
-        nlohmann_json
+    aw_fetch_dependency(
+        NAME nlohmann_json
         GIT_REPOSITORY https://github.com/nlohmann/json.git
-        GIT_TAG v3.11.3)
-    set(JSON_BuildTests OFF CACHE BOOL "" FORCE)
-    FetchContent_MakeAvailable(nlohmann_json)
+        GIT_TAG v3.11.3
+        OPTIONS
+            JSON_BuildTests OFF)
 endif()
 
 set(TOBUS_SOURCES
