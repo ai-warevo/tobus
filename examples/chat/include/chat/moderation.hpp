@@ -1,4 +1,4 @@
-// Moderation module — checks every MessageSent and answers with MessageApproved or MessageBlocked.
+/* Moderation module — checks every MessageSent and answers with MessageApproved or MessageBlocked. */
 
 #ifndef AW_TOBUS_CHAT_MODERATION_HPP
 #define AW_TOBUS_CHAT_MODERATION_HPP

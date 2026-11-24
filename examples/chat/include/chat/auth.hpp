@@ -1,4 +1,4 @@
-// Auth module — publishes UserJoined. Does not know who (if anyone) cares.
+/* Auth module — publishes UserJoined. Does not know who (if anyone) cares. */
 
 #ifndef AW_TOBUS_CHAT_AUTH_HPP
 #define AW_TOBUS_CHAT_AUTH_HPP

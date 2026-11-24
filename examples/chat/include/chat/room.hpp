@@ -1,4 +1,4 @@
-// Room module — users talk into it; it shows only what moderation approved.
+/* Room module — users talk into it; it shows only what moderation approved. */
 
 #ifndef AW_TOBUS_CHAT_ROOM_HPP
 #define AW_TOBUS_CHAT_ROOM_HPP
@@ -12,8 +12,10 @@ class Room {
 public:
     explicit Room(aw::tobus::IEventBus& bus, void (*log)(std::string_view));
 
-    // Publishes the *raw* message. The room never shows it directly:
-    // only MessageApproved reaches the screen.
+    /*
+     * Publishes the *raw* message. The room never shows it directly:
+     * only MessageApproved reaches the screen.
+     */
     void say(std::string from, std::string text);
 
 private:

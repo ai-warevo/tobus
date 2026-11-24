@@ -1,4 +1,4 @@
-// Notifier implementation.
+/* Notifier implementation. */
 
 #include "notifier.hpp"
 

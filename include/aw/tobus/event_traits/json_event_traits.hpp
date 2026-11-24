@@ -44,7 +44,8 @@ namespace aw::tobus {
  */
 template <typename T>
 struct JsonEventTraits {
-    static constexpr std::string_view name{}; // must be set by the user
+    /* Must be set by the user to a unique name for this event type. */
+    static constexpr std::string_view name{};
 
     static std::vector<std::byte> serialize(const T& event) {
         auto j = event.to_json();

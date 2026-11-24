@@ -12,8 +12,10 @@ namespace aw::tobus::detail {
 
 namespace {
 
-// What happens to a failure when the application gave no EventBusConfig::on_error: one line on stderr, so that a
-// broken handler never disappears without a trace. Applications that really want silence install a no-op handler.
+/*
+ * What happens to a failure when the application gave no EventBusConfig::on_error: one line on stderr, so that a
+ * broken handler never disappears without a trace. Applications that really want silence install a no-op handler.
+ */
 void write_default_report(std::string_view event_name, const std::exception_ptr& ep) noexcept {
     try {
         std::string line = "[tobus] handler for event '" + std::string(event_name) + "' failed: ";
@@ -25,7 +27,7 @@ void write_default_report(std::string_view event_name, const std::exception_ptr&
             line += "unknown exception";
         }
         line += '\n';
-        std::cerr << line << std::flush; // one insertion: lines from concurrent handlers do not interleave mid-line
+        std::cerr << line << std::flush; /* one insertion: lines from concurrent handlers do not interleave mid-line */
     } catch (...) {
     }
 }
@@ -45,7 +47,7 @@ Subscription Dispatcher::subscribe(const EventTypeInfo& type, RawEventHandler ha
     {
         std::lock_guard lock(mtx_);
         const auto [it, inserted] = identities_.try_emplace(type.id, type.type);
-        // The id is a hash of the name: two different C++ types sharing it would receive each other's events.
+        /* Hash collision: two different C++ types sharing this id would receive each other's events. */
         if (!inserted && *it->second != *type.type) {
             throw std::logic_error(collision_message(type.name));
         }
@@ -92,8 +94,7 @@ void Dispatcher::dispatch(const EventTypeInfo& type, const std::shared_ptr<const
     std::shared_ptr<const Table> snapshot;
     {
         std::lock_guard lock(mtx_);
-        // Handlers reinterpret the payload as their own type. If another type shares this id, delivering would
-        // be undefined behaviour, so refuse instead (subscribe() catches the case where both types subscribe).
+        /* Type safety: handlers reinterpret the payload as their own type. If another type shares this id, delivering would be undefined behaviour, so refuse instead. */
         const auto known = identities_.find(type.id);
         if (known != identities_.end() && *known->second != *type.type) {
             throw std::logic_error(collision_message(type.name));
@@ -106,7 +107,7 @@ void Dispatcher::dispatch(const EventTypeInfo& type, const std::shared_ptr<const
     }
     auto self = shared_from_this();
     for (const Entry& entry : it->second) {
-        // Count before starting: run() may finish (and call done()) on another thread immediately.
+        /* Count before starting: run() may finish (and call done()) on another thread immediately. */
         inflight_.add();
         try {
             aw::tpl::threading::tasks::co_spawn(run(self, entry.handler, event, type.name));
@@ -117,8 +118,7 @@ void Dispatcher::dispatch(const EventTypeInfo& type, const std::shared_ptr<const
     }
 }
 
-// The frame owns `self`, the handler and the event until the end: the handler's `const T&` can never dangle,
-// and the group (a member of *self) outlives the final done().
+/* Lifetime safety: the frame owns `self`, the handler and the event until the end: the handler's `const T&` can never dangle, and the group outlives the final done(). */
 Task<void> Dispatcher::run(std::shared_ptr<Dispatcher> self, std::shared_ptr<RawEventHandler> handler,
                            std::shared_ptr<const void> event, std::string_view event_name) {
     try {

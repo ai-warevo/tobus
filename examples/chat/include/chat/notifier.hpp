@@ -1,5 +1,5 @@
-// Notifier module — tells the author their message was blocked.
-// Knows nothing about Moderation, only about MessageBlocked.
+/* Notifier module — tells the author their message was blocked. */
+/* Knows nothing about Moderation, only about MessageBlocked. */
 
 #ifndef AW_TOBUS_CHAT_NOTIFIER_HPP
 #define AW_TOBUS_CHAT_NOTIFIER_HPP

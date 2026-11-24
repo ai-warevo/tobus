@@ -1,4 +1,4 @@
-// Room implementation — subscribes to UserJoined and MessageApproved.
+/* Room implementation — subscribes to UserJoined and MessageApproved. */
 
 #include "room.hpp"
 

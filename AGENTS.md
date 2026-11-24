@@ -80,6 +80,7 @@ Namespaces map to directories:
 
 - **Every public class, function, concept and exception type gets a Doxygen `/** ... */` block.** Brief docs on `detail/` types encouraged.
 - Inline `//` comments: minimal — only for non-obvious logic, subtle reasoning, or the *why*. Prefer better names over comments.
+- **C++ comment syntax:** Prefer C-style block comments `/* ... */` for multi-line or longer single-line explanations. Reserve `//` for rare, ultra-short inline notes or tool directives (`// NOLINT`). Never use `//` to narrate what code does (the reader knows C++).
 - Keep README tables/examples in sync when public behaviour changes.
 
 ## C++23 conventions & style

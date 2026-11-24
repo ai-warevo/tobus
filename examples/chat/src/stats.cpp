@@ -1,4 +1,4 @@
-// Stats implementation.
+/* Stats implementation. */
 
 #include "stats.hpp"
 

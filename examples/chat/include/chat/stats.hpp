@@ -1,5 +1,5 @@
-// Stats module — pure observer: subscribes to everything, publishes nothing.
-// Adding it required no change in any other module.
+/* Stats module — pure observer: subscribes to everything, publishes nothing. */
+/* Adding it required no change in any other module. */
 
 #ifndef AW_TOBUS_CHAT_STATS_HPP
 #define AW_TOBUS_CHAT_STATS_HPP
@@ -11,7 +11,7 @@
 namespace aw::tobus::examples::chat {
 
 struct StatsData {
-    // Handlers run concurrently on different threads, hence atomics.
+    /* Handlers run concurrently on different threads, hence atomics. */
     std::atomic<int> joined{0};
     std::atomic<int> sent{0};
     std::atomic<int> approved{0};
