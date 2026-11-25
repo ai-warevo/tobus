@@ -25,9 +25,6 @@ jobs:
     with:
       source_dir: .
       build_dir: build
-      container_image: ghcr.io/ai-warevo/ci-cpp23
-      linux_toolchains: '["clang18-libcxx", "gcc15"]'
-      build_types: '["Debug"]'
       enable_windows: true
       cmake_extra_args_linux: >-
         -DTOBUS_WARNINGS_AS_ERRORS=ON
